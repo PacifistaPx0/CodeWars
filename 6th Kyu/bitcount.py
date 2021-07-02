@@ -12,7 +12,8 @@ def count_bits(n):
             bitlist.append(1)
             count +=1
     #reversing the list to return the correct order of binary 
-    bitlist = bitlist[::-1]
+    bitlist = (bitlist[::-1])
+    bitlist = "".join(map(str, bitlist))
     print(bitlist)
     return count
 
