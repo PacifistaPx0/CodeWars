@@ -41,13 +41,11 @@ def encrypt(text, n):
         return text
     if not text:
         return ""
-    text = list(text)
 
     while n>0:
         even = text[1::2]
         odd = text[::2]
         n-=1
-        even, odd = "".join(map(str, even)), "".join(map(str, odd))
         encrypt_txt = even + odd 
         text = encrypt_txt
 
