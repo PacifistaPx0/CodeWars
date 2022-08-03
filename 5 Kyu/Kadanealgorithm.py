@@ -18,11 +18,11 @@ def max_sequence(list):
                     max_end = list[i]
                 elif max_far < max_end:
                     max_far = max_end
+        return max_far
 
-    except ValueError:
+    except TypeError:
         print("A list is required")
     
-    return max_far
 
-print(max_sequence([-1,-2,-5]))
+print(max_sequence([1,-2,3,-4,2,1,-1,2,6,-5,4,-1,1]))
             
